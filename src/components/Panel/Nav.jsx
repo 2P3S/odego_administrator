@@ -6,10 +6,10 @@ const NavItem = ({ iconName, itemName, link }) => {
     <li>
       <a
         href={link}
-        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+        className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
       >
         <NavIcon icon={iconName} />
-        <span class="ml-3">{itemName}</span>
+        <span className="ml-3">{itemName}</span>
       </a>
     </li>
   );
@@ -17,7 +17,7 @@ const NavItem = ({ iconName, itemName, link }) => {
 
 const Nav = () => {
   return (
-    <ul class="space-y-2 font-medium">
+    <ul className="space-y-2 font-medium">
       <NavItem iconName="main" itemName="메인" link="main" />
       <NavItem iconName="notice" itemName="공지사항" link="notice" />
       <NavItem
