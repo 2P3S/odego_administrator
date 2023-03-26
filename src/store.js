@@ -18,8 +18,4 @@ const store = configureStore({
   reducer: counter,
 });
 
-document.getElementById("increment").addEventListener("click", () => {
-  store.dispatch(increament());
-});
-
 export default store;
