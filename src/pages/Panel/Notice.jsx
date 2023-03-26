@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "../../components/Panel/Nav";
+import Aside from "../../components/Panel/Aside";
 
 const NoticePage = () => {
   return (
-    <>
-      <Nav />
-    </>
+    <div>
+      <Aside />
+    </div>
   );
 };
 

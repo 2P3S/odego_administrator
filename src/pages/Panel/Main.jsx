@@ -1,11 +1,11 @@
 import React from "react";
-import Nav from "../../components/Panel/Nav";
+import Aside from "../../components/Panel/Aside";
 
 const MainPage = ({ professorInfo }) => {
   return (
-    <>
-      <Nav professorInfo={professorInfo} />
-    </>
+    <div>
+      <Aside />
+    </div>
   );
 };
 
