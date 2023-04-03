@@ -6,6 +6,7 @@ import NoticePage from "./pages/Panel/Notice";
 import StudentInfoPage from "./pages/Panel/StudentInfo";
 import SettingsPage from "./pages/Panel/Settings";
 import TestPage from "./pages/Exper/Test";
+import NotFoundPage from "./pages/NotFound";
 
 const Router = () => {
   return (
@@ -18,6 +19,8 @@ const Router = () => {
         <Route path="/notice" element={<NoticePage />} />
         <Route path="/student-info" element={<StudentInfoPage />} />
         <Route path="/settings" element={<SettingsPage />} />
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
