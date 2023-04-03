@@ -42,7 +42,7 @@ const TestPage = () => {
     <div>
       <Aside />
       <Display>
-        <Table data={data} />
+        <Table type="student" data={data} />
       </Display>
     </div>
   );
