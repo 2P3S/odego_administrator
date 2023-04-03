@@ -1,7 +1,7 @@
 import React from "react";
 import Aside from "../../components/Panel/Aside";
 
-const MainPage = ({ professorInfo }) => {
+const MainPage = () => {
   return (
     <div>
       <Aside />
