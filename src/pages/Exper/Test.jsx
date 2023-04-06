@@ -39,12 +39,12 @@ const TestPage = () => {
     },
   ];
   return (
-    <div>
+    <>
       <Aside />
       <Display>
         <Table type="student" data={data} />
       </Display>
-    </div>
+    </>
   );
 };
 

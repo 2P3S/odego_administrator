@@ -6,13 +6,13 @@ import NoticeSection from "../../components/Panel/Main/NoticeSection";
 
 const MainPage = () => {
   return (
-    <div>
+    <>
       <Aside />
       <Display>
         <AttendanceSection />
         <NoticeSection />
       </Display>
-    </div>
+    </>
   );
 };
 
