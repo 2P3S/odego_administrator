@@ -3,9 +3,9 @@ import Aside from "../../components/Panel/Aside";
 
 const NoticePage = () => {
   return (
-    <div>
+    <>
       <Aside />
-    </div>
+    </>
   );
 };
 

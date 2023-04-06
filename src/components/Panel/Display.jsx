@@ -1,11 +1,7 @@
 import React from "react";
 
 const Display = ({ children }) => {
-  return (
-    <div className="p-4 sm:ml-64">
-      <div className="container">{children}</div>
-    </div>
-  );
+  return <div className="container p-4 sm:ml-64">{children}</div>;
 };
 
 export default Display;
