@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import TitleBadge from "../../TitleBadge";
 
 const ReasonItem = ({ title, studentName, date }) => {
@@ -13,6 +14,54 @@ const ReasonItem = ({ title, studentName, date }) => {
 };
 
 const ReasonSection = () => {
+  const [reasons, setReasons] = useState([
+    {
+      id: 1,
+      title: "테스트1",
+      studentName: "이주현",
+      date: "2023.04.06",
+    },
+    {
+      id: 2,
+      title: "테스트2",
+      studentName: "김주현",
+      date: "2023.05.02",
+    },
+    {
+      id: 3,
+      title: "테스트3",
+      studentName: "박주현",
+      date: "2023.05.23",
+    },
+    {
+      id: 4,
+      title: "테스트4",
+      studentName: "최주현",
+      date: "2023.05.23",
+    },
+    {
+      id: 5,
+      title: "테스트5",
+      studentName: "미주현",
+      date: "2023.05.23",
+    },
+    {
+      id: 6,
+      title: "테스트6",
+      studentName: "서주현",
+      date: "2023.05.23",
+    },
+  ]);
+
+  // useEffect(() => {
+  //   const getReasons = async () => {
+  //     const response = await fetch("http://localhost:8080/api/reason");
+  //     const data = await response.json();
+  //     setReasons(data);
+  //   };
+  //   getReasons();
+  // }, []);
+
   return (
     <div className="reason-section">
       <div className="header-sm">
@@ -20,9 +69,17 @@ const ReasonSection = () => {
       </div>
       <div className="w-96">
         <ul className="flex flex-col gap-2">
-          <ReasonItem title="1234" studentName="이주현" date="2023.04.06" />
-          <ReasonItem title="테스트2" studentName="김주현" date="2023.05.02" />
-          <ReasonItem title="테스트3" studentName="박주현" date="2023.05.23" />
+          {/* TODO: slice 갯수 커스텀 */}
+          {reasons.slice(0, 5).map(reason => {
+            return (
+              <ReasonItem
+                key={reason.id}
+                title={reason.title}
+                studentName={reason.studentName}
+                date={reason.date}
+              />
+            );
+          })}
         </ul>
       </div>
     </div>
