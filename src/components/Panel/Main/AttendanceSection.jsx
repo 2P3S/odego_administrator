@@ -1,7 +1,11 @@
+import React, { useState } from "react";
 import TitleBadge from "../../TitleBadge";
 import FillGraph from "../../FillGraph";
 
 const AttendanceSection = () => {
+  const [attendance, setAttendance] = useState({ total: 33, attend: 31 });
+  const attendRate = Math.floor((attendance.attend / attendance.total) * 100);
+  const notAttendRate = 100 - attendRate;
   return (
     <div className="attendance-section">
       <div className="header-sm">
@@ -10,15 +14,15 @@ const AttendanceSection = () => {
       <div>
         참석 인원
         <div>
-          {"29" + " / " + "33"}
-          <FillGraph color="bg-indigo-500" data={97} />
+          {attendance.attend + " / " + attendance.total}
+          <FillGraph color="bg-indigo-500" data={attendRate} />
         </div>
       </div>
       <div>
         미참석 인원
         <div>
-          {"4" + " / " + "33"}
-          <FillGraph color="bg-amber-400" data={3} />
+          {attendance.total - attendance.attend + " / " + attendance.total}
+          <FillGraph color="bg-amber-400" data={notAttendRate} />
         </div>
       </div>
     </div>
