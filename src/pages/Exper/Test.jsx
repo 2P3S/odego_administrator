@@ -3,9 +3,6 @@ import Aside from "../../components/Panel/Aside";
 import Display from "../../components/Panel/Display";
 import Table from "../../components/Panel/Table";
 
-import Posts from "../../components/Exper/Posts";
-import AttendanceSection from "../../components/Panel/Main/AttendanceSection";
-
 const TestPage = () => {
   // FIXME: must be Implement with Redux
   // TODO: Impliment pagination
@@ -45,9 +42,7 @@ const TestPage = () => {
     <>
       <Aside />
       <Display>
-        {/* <Table type="student" data={data} /> */}
-        <Posts />
-        <AttendanceSection />
+        <Table type="student" data={data} />
       </Display>
     </>
   );
