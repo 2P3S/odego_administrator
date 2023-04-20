@@ -64,8 +64,8 @@ const ReasonSection = () => {
 
   return (
     <div className="reason-section">
-      <div className="header-sm">
-        <TitleBadge color="blue">사유서</TitleBadge>
+      <div className="header-sm my-3">
+        <TitleBadge color="green">사유서</TitleBadge>
       </div>
       <div className="w-96">
         <ul className="flex flex-col gap-2">

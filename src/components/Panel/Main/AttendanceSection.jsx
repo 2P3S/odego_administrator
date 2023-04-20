@@ -4,7 +4,7 @@ import FillGraph from "../../FillGraph";
 const AttendanceSection = () => {
   return (
     <div className="attendance-section">
-      <div className="header-sm">
+      <div className="header-sm my-3">
         <TitleBadge color="red">참석율</TitleBadge>
       </div>
       <div>

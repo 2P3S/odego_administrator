@@ -58,7 +58,7 @@ const NoticeSection = () => {
 
   return (
     <div className="notice-section">
-      <div className="header-sm">
+      <div className="header-sm my-3">
         <TitleBadge color="blue">공지사항</TitleBadge>
       </div>
       <div className="w-96">
