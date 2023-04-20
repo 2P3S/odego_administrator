@@ -1,5 +1,5 @@
 import React from "react";
-import Aside from "../../components/Panel/Aside";
+import Aside from "@Components/Panel/Aside";
 
 const NoticePage = () => {
   return (
