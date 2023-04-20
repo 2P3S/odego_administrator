@@ -6,6 +6,7 @@ module.exports = {
     alias: {
       /* ... */
       "@Components": path.resolve(__dirname, "src/components/"),
+      "@Datas": path.resolve(__dirname, "src/datas/"),
     },
     plugins: {
       add: [
