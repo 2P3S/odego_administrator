@@ -58,7 +58,7 @@ const PagingDemo = () => {
         }}
         sortingMode={SortingMode.Single}
         editingMode={EditingMode.Cell}
-        rowKeyField={"id"}
+        rowKeyField={"studentId"}
       />
     </>
   );
