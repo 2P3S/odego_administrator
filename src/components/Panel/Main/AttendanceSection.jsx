@@ -1,5 +1,5 @@
-import TitleBadge from "../../TitleBadge";
-import FillGraph from "../../FillGraph";
+import TitleBadge from "@Components/common/TitleBadge";
+import FillGraph from "@Components/common/FillGraph";
 
 const AttendanceSection = () => {
   return (

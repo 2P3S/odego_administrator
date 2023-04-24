@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TitleBadge from "../../TitleBadge";
+import TitleBadge from "@Components/common/TitleBadge";
 
 const ReasonItem = ({ title, studentName, date }) => {
   return (
